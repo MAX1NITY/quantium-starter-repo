@@ -25,4 +25,4 @@ final_data = pd.concat([data1, data2, data3], ignore_index= True)
 
 final_data = final_data[["sales", "date", "region"]]
 
-final_data.to_csv("single_formatted_output", index = False)
+final_data.to_csv("single_formatted_output.csv", index = False)

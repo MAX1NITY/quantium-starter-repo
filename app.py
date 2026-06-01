@@ -12,6 +12,8 @@ df = pd.read_csv(file_path)
 fig = px.line(df, x="Date", y="Sales", title="Pink Morsel Sales per Day")
 
 app.layout = html.Div(children=[
+    html.H1(children='Pink Morsel Sales Chart'),
+
     dcc.Graph(
         id='sales-graph',
         figure=fig

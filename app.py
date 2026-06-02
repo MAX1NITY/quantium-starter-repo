@@ -14,7 +14,7 @@ fig = px.line(df, x="Date", y="Sales", title="Pink Morsel Sales per Day")
 regions = df['Region'].unique().tolist()
 
 app.layout = html.Div([
-    html.H1(children='Pink Morsel Sales Chart', className="heading"),
+    html.H1(children='Pink Morsel Sales Chart', className="heading", id="header"),
 
     dcc.Graph(
         id='sales-graph'
